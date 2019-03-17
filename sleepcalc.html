@@ -1,0 +1,132 @@
+<html>
+<head>
+<style>
+form {
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+</style>
+</head>
+<body background="swp.jpg">
+        <script>
+
+function toggleElement(id)
+{
+    if(document.getElementById(id).style.display == 'none')
+    {
+        document.getElementById(id).style.display = '';
+    }
+    else
+    {
+        document.getElementById(id).style.display = 'none';
+    }
+}
+</script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="hide-show-fields-form.css" rel="stylesheet"/>
+<font color="white"><form class="p-3">
+  <div class="form-group">
+    <label>Do You Sleep for atleast 8 hours everynight?</label>
+    <select class="form-control" id="sleep0">
+          <option value="no">No </option>
+          <option value="yes">Absolutely!</option>
+    </select>
+  </div>
+  <div class="form-group" id="otherFieldDiv">
+    <label >If not how many hours of sleep you get everyday?</label>
+    <select class="form-control" id="sleep1">
+      <option>around 5hrs</option>
+      <option>less than 5hrs</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Do You take naps during the day?</label>
+    <select class="form-control" id="sleep2">
+          <option value="no">Frequently</option>
+          <option value="yes">Rarely!</option>
+    </select>
+  </div>
+  <div class="form-group" >
+   <div class="row">
+    <div class="col-6">
+      <input name="sleeptime" type="radio" id="sleep3">Prefer sleeping around 10pm?</input>
+      
+    </div>
+    <div class="col-6">
+      <input name="sleeptime" type="radio" id="sleep3">Burn the midnight oil?</input>
+     
+    </div>
+   
+   </div>
+    
+
+  </div>
+  <div class="form-group" >
+  <label>Are you a person who wakes up frequently during the night?</label>
+   <div class="row">
+   
+    <div class="col-6">
+      <input name="sleeptime2" type="radio" id="sleep3">YES</input>
+      
+    </div>
+    <div class="col-6">
+      <input name="sleeptime2" type="radio" id="sleep3">NO</input>
+     
+    </div>
+   
+   </div>
+    
+
+  </div>
+    <label>Do you have insomania?</label>
+   <div class="row">
+   
+    <div class="col-6">
+      <input name="sleeptime3" type="radio" id="sleep3">YES</input>
+      
+    </div>
+    <div class="col-6">
+      <input name="sleeptime3" type="radio" id="sleep3">NO</input>
+     
+    </div>
+   
+   </div>
+    
+
+  </div></font>
+
+  <a href="javascript:toggleElement('a1')"><h1>Now rate yourself based on your above answers!</h1></a>
+  <div id="a1" style="display:none">
+<font color="lightgrey"><h4><b><u>*FOR the HEALTHY SLEEPERS OUT THERE!!</u><br><p> If ur sleep time exceeds or remains 8 hours everynight! CONGRADULATIONS! you a leading a healthy life!</p><br>
+<u>*FOR the STINGY SLEEPERS OUT THERE!</u><br><p>It's easy to lay in the bed and toss and turn as we fight to let go of the day. But actually letting the day go is the only way to
+ end a long day.
+Even though the day was stressful, we did the best we could – and we deserve to rest.</p><br><u>*FOR DAYTIME NAPPERS OUT THERE!</u><br><p>Actually, naps are good for most people,
+ a nap defined as daytime sleeping that lasts between 15 and 90 minutes can improve brain functions ranging from memory to focus and creativity. “For some people, 
+naps are as restorative as a whole night of sleep”.
+More research shows a quick nap can lower stress and recharge your willpower. And napping has also been linked to lower rates of 
+ cardiovascular disease and inflammation.</p><br><u>*FOR the NIGHTIME OWLS OUT THERE!</u><p>You love to say you're a night owl, yet your body is telling 
+a very different story.Sleeping late makes you wake up late and this can lead to loss of concentration. Sleeping beyond nature’s permissible sleep hours can offset your mood
+ and lead to considerable drop in concentration. It’s always advisable to lead life according to the in-built
+ time table of the body. Moreover, if your counterparts are waking in time, it means you can lag behind them in the day’s work and reduced time means a lack of 
+ concentration too.</p><br><u>*FOR the INSOMANIACS OUT THERE!!</u><br><p>Insomnia is difficult in its own right, but it may also cause other issues, both psychological and physical.
+ Many people with insomnia feel more refreshed when they get proper treatment and finally begin to sleep well again.
+Chronic insomnia (difficulty sleeping for three months or longer) may also lead to changes in mood, lack of motivation and energy, irritability, and more.
+When you're drowsy, it may make you feel tense and preoccupied, and the worry over your inability to sleep can add to this.</p><br><u>TIME TO GETOVER YOUR SLEEP DISORDERS!</u><br><p>
+To help stay asleep through the night, try some of these strategies to relieve insomnia:
+
+Establish a quiet, relaxing bedtime routine. For example, drink a cup of caffeine-free tea, take a warm shower or listen to soft music. Avoid prolonged use of electronic
+ devices with a screen, such as laptops, smartphones and ebooks before bed.
+Relax your body. Gentle yoga or progressive muscle relaxation can ease tension and help tight muscles to relax.
+Make your bedroom conducive to sleep. Keep light, noise and the temperature at levels that are comfortable and won't disturb your rest. Don't engage in activities other 
+than sleeping or sex in your bedroom. This will help your body know this room is for sleeping.
+Put clocks in your bedroom out of sight. Clock-watching causes stress and makes it harder to go back to sleep if you wake up during the night.</p> <b></h4>
+</div></font>
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="hide-show-fields-form.js"></script>
+</body>
+</html>

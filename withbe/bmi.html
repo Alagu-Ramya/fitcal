@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>BMI Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="bmi.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.notification {
+  background-color:black;
+  color: white;
+  text-decoration: none;
+  padding: 15px 24px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: grey;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    	<div class="panel">
+    		<h2 class="text-center">CHECK YOUR BMI</h2>
+
+    			<p id="introText" class="text-center">Enter your weight and height below to check your BMI results</p>
+
+    			<form id="test" action="action.php">
+    				<div id="weightInput">
+    					<p>Put your weight in here (KG)</p>
+    		     		<input id="weight" type="number" pattern="[0-9]*" name="a" />
+    				</div>
+    				<div id="heightInput">
+    					<p>And your height in here (CM)</p>
+	    				 <input id="height" type="number" pattern="[0-9]*" name="b"/>
+    				</div>
+    		     <button type="button" class="btn" onclick="calculate()">Calculate BMI</button>
+    		</form>
+    		<div id="results" class="text-center">Your BMI results will appear here</div><br>
+		    <h1>Click here to explore the fitness catalog! </h1><a href="#" class="notification"><i class="material-icons" style="font-size:22px;">fitness_center</i></a>
+    	</div>
+    </div>
+	<script src="main.js"></script>
+</body>
+</html>

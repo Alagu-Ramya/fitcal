@@ -1,0 +1,85 @@
+body {
+    background-color: #eee;
+    text-align: center;
+    background: url('pic1.jpg');
+    background-size:cover;
+    background-repeat:  no-repeat;
+}
+
+button {
+    background-color: rgba(0,0,0,0);
+    outline: none;
+}
+#test
+{
+  opacity: 0.5;
+  border-radius: 20px;
+  margin-left: -100;
+}
+h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: darkblue;
+}
+
+.btn {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 5px 14px;
+    border: 2px solid #201f1d;
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,.4);
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+input:focus {
+    border: 2px solid rgba(0,0,0,.4);
+    background-color: rgb(60,60,60);
+}
+
+form {
+    background-color: #fff;
+    font-size: 25px;
+    padding: 23px;
+    color: #000;
+    box-shadow: 0 12px 39px 0 rgba(0,0,0,.4);
+    width: 509px;
+    margin-top: 100px;
+}
+
+form p {
+    margin-bottom: 5px;
+}
+
+form p:nth-child(1){
+    margin-top: 0;
+}
+
+.panel {
+    margin-top: 20px;
+    float: none;
+}
+
+@media (min-width: 768px) {
+    .panel {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .panel {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
